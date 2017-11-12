@@ -1,0 +1,209 @@
+// ----
+// Sass (v3.4.21)
+// Compass (v1.0.3)
+// ----
+
+// ----
+// Sass (v3.4.21)
+// Compass (v1.0.3)
+// ----
+
+// ----
+// Sass (v3.4.21)
+// Compass (v1.0.3)
+// ----
+
+// ----
+// Sass (v3.4.21)
+// Compass (v1.0.3)
+// ----
+
+$decore:none;
+$primary-font:italic;
+$color:black;
+@mixin border-radius($radio){
+  -webkit-border-radius:$radio;
+  -moz-border-radius:$radio;
+}
+
+@mixin background-color($color){
+  background-color:$color;
+}
+
+@mixin margin-top($top){
+  margin-top:$top;
+}
+@mixin margin-left($left){
+  margin-left:$left;
+}
+
+.container_12{
+@include background-color(#EBECED);
+}
+
+header{
+@include background-color(#FFFFFF); 
+position:fixed;
+height:98px;
+border-top:3px solid;
+border-top-color:red;
+box-shadow:0 1px 0px #888888;
+}
+.logoImagen{
+@include margin-top(10px);
+}
+
+.loginImagen{
+@include margin-top(25px);
+@include margin-left(18px);
+}
+
+#menuBoton{
+@include margin-top(26px);
+}
+
+#login{
+color:$color;
+font-size:12px;
+font-weight:bold;
+}
+
+.carritoImagen{
+@include margin-top(25px);
+}
+
+
+#carritoNombre{
+color:$color;
+font-size:12px;
+font-style:initial;
+font-weight: bold;
+text-align:justify;
+}
+
+.titulo{
+color:red;
+font-style:$primary-font;
+@include margin-top(35px);
+}
+
+a{
+  text-decoration:$decore;
+}
+
+#buscador{
+ @include margin-top(30px);
+}
+
+
+.buscadorTexto{
+@include border-radius(20px);
+font-size:25px;
+@include background-color(#EBECED);
+}
+
+#franja{
+background-color:#862c2c;
+padding-top:110px;
+padding-bottom:30px;
+}
+
+#frajaTexto{
+@include margin-left(25px);
+color:#ffffff;
+}
+
+.carruselImagen{
+width:960px;
+margin-right:10px;
+}
+
+nav{	
+@include margin-left(20px);
+@include margin-top(30px);
+}
+
+
+li{
+@include margin-left(8px);
+display:inline-block;	
+list-style-type:$decore;
+}
+
+.textoSaludo{
+font-size:23px;
+font-style:Normal;
+@include margin-left(13px);
+@include margin-top(35px);
+color:gray;
+}
+
+.holaTexto{
+text-decoration: underline;
+text-decoration-color: red;
+-moz-text-decoration-color: red;
+color:black;
+}
+
+.secciones{
+	margin:3px;
+}
+
+
+.seccionPrincipal1{
+@include margin-top(35px);
+@include margin-left(8px);
+text-decoration:$decore;
+}
+
+.seccionPrincipal2{
+@include margin-top(10px);
+@include margin-left(8px);
+  text-decoration:$decore;
+}
+
+#links1{
+@include margin-top(20px);
+}
+
+#copyRight{
+@include margin-left(220px);
+}
+
+.privacion{
+text-decoration:$decore;	
+color:$color;
+@include margin-left(20px);
+}
+
+#condicion{
+@include margin-left(180px);
+}
+
+.condiciones{
+text-decoration:$decore;	
+color:black;
+@include margin-left(20px);
+}
+
+#links2{
+@include margin-top(25px);
+}
+
+#redesSociales{
+@include margin-top(25px);
+@include margin-left(25px);
+}
+
+#mapa{
+@include margin-left(170px);
+}
+
+footer{
+border-top:3px solid;
+border-top-color:red;
+@include margin-top(40px);
+border-color:#ff0000;
+@include background-color(#EAAAAA);
+height:200px;
+}
